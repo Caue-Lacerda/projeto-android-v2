@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../font/idroid.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+:root {
+    --cinzaClaro: #d3d3d3;
+    --cinza: #808080;
+    --preto: #000000;
+    --branco: #ffffff;
+    --transparente: #00000000;
+    --sombra: #0000004d;
+
+    --cor1: #27CAF2;
+    --cor2: #1A88A3;
+    --cor3: #639CAB;
+    --cor4: #356470;
+    --cor5: #0E4857;
+
+    --fontBasica:  Helvetica, sans-serif;
+    --fontIdroid: 'idroid', Arial, Helvetica, sans-serif;
+    --fontTitulo: 'Oswald', sans-serif;
+}

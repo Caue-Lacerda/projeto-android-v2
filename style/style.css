@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+/* Reset de configurações */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Setamo tudo para 100% da viewport*/
+html, body {
+    width: 100%;
+    background-color: var(--cor3);
+}
+
+/* Seleção com Mouse */
+::selection {
+    background-color: var(--cor1);
+}
+
+
+
+
+/* --------------------------Header----------------------------- */
+
+/* Cebeçalho */
+header {
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+}
+
+/* Titulo do header */
+header > h1 {
+    padding-top: 25px;
+
+    color: var(--branco);
+    font: bolder 2.3em var(--fontTitulo);
+
+    text-align: center;
+    text-shadow: 1px 1px 0px var(--sombra);
+}
+
+/* Paragrafo do header */
+header > p {
+    padding: 10px;
+    margin: 10px 0px;
+
+    color: var(--branco);
+    font: bolder 1em var(--fontBasica);
+
+    text-align: center;
+    text-shadow: 1px 1px 0px var(--sombra);
+}
+
+/* Icone do mini menu header */
+span#menuMini {
+    width: 100%;
+
+    text-align: center;
+    user-select: none;
+
+    color: var(--branco);
+    background-color: var(--cor5);
+}
+
+/* Icone do mini menu com mouse me cima */
+span#menuMini:hover {
+    cursor: pointer;
+    box-sizing: border-box;
+
+    color: var(--preto);
+    border: 0.3px solid var(--branco);
+    background-color: var(--cor3);
+
+    transition: 1s;
+    transform: scaleY(1.1);
+}
+
+/* Caixa Menu que comporta os elementos ul e li */
+menu {
+    display: none;
+}
+
+/* Configuração dos links/bottões */
+menu >  ul > li > a {
+    display: block;
+    box-sizing: border-box;
+
+    margin-top: 5px;
+    padding: 2px;
+    
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--cor5);
+    
+    color: var(--branco);
+    background-color: var(--cor5);
+    transition-duration: 0.5s;
+}
+
+/* Config para quando passar mouse nos links/botões */
+menu > ul > li > a:hover {
+    border: 1px solid var(--branco);
+
+    color: var(--preto);
+    background-color: var(--cor3); 
+}
+
+/* ----------------------------//------------------------------- */
+
+
+
+
+/* --------------------------- Main ---------------------------- */
+
+/* Conteudo */
+main {
+    width: 100%;
+    margin: 0px auto 0px auto;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 4px var(--sombra);
+    background-color: var(--branco);
+}
+
+/* Titulo h1 de Main */
+main > h1 {
+    box-sizing: border-box;
+
+    padding: 0px 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    font: normal 2em var(--fontIdroid);
+    color: var(--cor5);
+
+    transition: 1s ease;
+}
+
+/* Subtitulo do h1, o h2 de Main */
+main > h2 {
+    box-sizing: border-box;
+
+    padding: 0px 10px;
+    margin: 15px;
+    margin-bottom: 15px;
+
+    font: normal 1.5em var(--fontIdroid);
+    color: var(--cor4);
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: linear-gradient(to right, var(--cor1), var(--branco));
+
+    transition: 1s ease;
+}
+
+/* Parágrafo p do Main */
+main > p {
+    box-sizing: border-box;
+    
+    padding: 0px 15px;
+    margin-bottom: 25px;
+    
+    font: normal 1em var(--fontBasica);
+    line-height: 2em;
+    text-indent: 30px;
+    text-align: justify;
+    
+    transition: 1s ease;
+}
+
+/* Links do main  */
+a.external {
+    padding: 1.5px 3px;
+
+    text-decoration: none;
+    font-weight: bolder;
+
+    border-radius: 4px;
+    color: var(--preto);
+    background-color: var(--cor2);
+}
+
+/* Links do main passar mouse */
+a.external:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+
+    color: var(--branco);
+    background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+
+    transition: 0.5s;
+}
+
+/* Icone de clip do lado do link main */
+a.external::after {
+    content: '\1F517';
+}
+
+/* Palavras em negrito main */
+main strong {
+    color: var(--cor5);
+}
+
+/* Caixa de image main */
+main picture {
+   width: 100%;
+}
+
+/* Imagens Main */
+main > picture > img{
+    width: 100%;
+    border: 15px solid var(--branco);
+    box-sizing: border-box;
+}
+
+/* Imagem bugdroid main */
+img.bugdroid {
+    width: 100%;
+    padding: 0% 12%;
+
+    box-sizing: border-box;
+    border: none;
+}
+
+
+div.video {
+    position: relative;
+    padding-bottom: 57%;
+    box-sizing: border-box;
+
+    background-color: var(--cor5);
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+/* ------------ Div Aprende ------------- */
+#aprende{
+    width: 92%;
+    margin: 4%;
+    box-sizing: border-box;
+    
+    border-radius: 15px;
+    background-color: var(--cor3);
+}
+
+/* Titulo da div aprende */
+#aprende > h2 {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    color: var(--branco);
+    background-color: var(--cor5);
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*------ Parágrafo da Div Aprende ------ */
+#aprende > p {
+    padding: 10px;
+    box-sizing: border-box;
+    
+    font: normal 1em var(--fontBasica);
+    line-height: 1.5em;
+
+    text-indent: 30px;
+    text-align: justify;
+}
+
+/* Bloco da lista da Div Aprende */
+#aprende > ul {
+    padding: 10px;
+
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+/* Itens do Bloco Lista */
+#aprende > ul > li {
+    margin-bottom: 15px;
+    padding: 3px;
+    border: 1px solid var(--cor4);
+}
+/* -------------------------------------- */
+
+/* ----------------------------//------------------------------- */
+
+
+
+
+/*------------------------- Rodapé ------------------------------*/
+footer {
+    width: 100%;
+    background-color: var(--cor5);
+}
+
+/* Parágrafo do rodapé */
+footer > p {
+    padding: 3px;
+    text-align: center;
+    color: var(--branco)
+}
+
+/* Links do rodapé */
+footer > p > a {
+    color: var(--branco);
+    text-decoration: none;
+}
+/* ----------------------------//------------------------------- */
