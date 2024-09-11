@@ -33,7 +33,7 @@ header > h1 {
     padding-top: 25px;
 
     color: var(--branco);
-    font: bolder 2em var(--fontTitulo);
+    font: bolder 1.8em var(--fontTitulo);
 
     text-align: center;
     text-shadow: 1px 1px 0px var(--sombra);
